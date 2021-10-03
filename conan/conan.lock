@@ -1,0 +1,172 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "ade:fPIC=True\neigen:MPL2_only=False\ngtest:build_gmock=True\ngtest:fPIC=True\ngtest:hide_symbols=False\ngtest:no_main=False\ngtest:shared=False\njasper:fPIC=True\njasper:jpegturbo=deprecated\njasper:shared=False\njasper:with_libjpeg=libjpeg\njbig:build_executables=True\njbig:fPIC=True\njbig:shared=False\nlibdeflate:fPIC=True\nlibdeflate:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibpng:api_prefix=\nlibpng:fPIC=True\nlibpng:shared=False\nlibpng:sse=True\nlibtiff:cxx=True\nlibtiff:fPIC=True\nlibtiff:jbig=True\nlibtiff:jpeg=libjpeg\nlibtiff:libdeflate=True\nlibtiff:lzma=True\nlibtiff:shared=False\nlibtiff:webp=True\nlibtiff:zlib=True\nlibtiff:zstd=True\nlibwebp:fPIC=True\nlibwebp:near_lossless=True\nlibwebp:shared=False\nlibwebp:swap_16bit_csp=False\nlibwebp:with_simd=True\nopencv:contrib=False\nopencv:detect_cpu_baseline=False\nopencv:dnn=True\nopencv:fPIC=True\nopencv:parallel=False\nopencv:shared=False\nopencv:with_ade=True\nopencv:with_cuda=False\nopencv:with_eigen=True\nopencv:with_imgcodec_hdr=False\nopencv:with_imgcodec_pfm=False\nopencv:with_imgcodec_pxm=False\nopencv:with_imgcodec_sunraster=False\nopencv:with_jpeg=libjpeg\nopencv:with_jpeg2000=jasper\nopencv:with_openexr=True\nopencv:with_png=True\nopencv:with_quirc=True\nopencv:with_tiff=True\nopencv:with_webp=True\nopenexr:fPIC=True\nopenexr:shared=False\nprotobuf:fPIC=True\nprotobuf:lite=False\nprotobuf:shared=False\nprotobuf:with_rtti=True\nprotobuf:with_zlib=True\nquirc:fPIC=True\nquirc:max_regions=254\nquirc:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
+    "requires": [
+     "1",
+     "2",
+     "17"
+    ],
+    "path": "../conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "eigen/3.4.0",
+    "options": "MPL2_only=False",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "2": {
+    "ref": "opencv/4.5.3",
+    "options": "contrib=False\ndetect_cpu_baseline=False\ndnn=True\nfPIC=True\nparallel=False\nshared=False\nwith_ade=True\nwith_cuda=False\nwith_eigen=True\nwith_imgcodec_hdr=False\nwith_imgcodec_pfm=False\nwith_imgcodec_pxm=False\nwith_imgcodec_sunraster=False\nwith_jpeg=libjpeg\nwith_jpeg2000=jasper\nwith_openexr=True\nwith_png=True\nwith_quirc=True\nwith_tiff=True\nwith_webp=True\nade:fPIC=True\neigen:MPL2_only=False\njasper:fPIC=True\njasper:jpegturbo=deprecated\njasper:shared=False\njasper:with_libjpeg=libjpeg\njbig:build_executables=True\njbig:fPIC=True\njbig:shared=False\nlibdeflate:fPIC=True\nlibdeflate:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibpng:api_prefix=\nlibpng:fPIC=True\nlibpng:shared=False\nlibpng:sse=True\nlibtiff:cxx=True\nlibtiff:fPIC=True\nlibtiff:jbig=True\nlibtiff:jpeg=libjpeg\nlibtiff:libdeflate=True\nlibtiff:lzma=True\nlibtiff:shared=False\nlibtiff:webp=True\nlibtiff:zlib=True\nlibtiff:zstd=True\nlibwebp:fPIC=True\nlibwebp:near_lossless=True\nlibwebp:shared=False\nlibwebp:swap_16bit_csp=False\nlibwebp:with_simd=True\nopenexr:fPIC=True\nopenexr:shared=False\nprotobuf:fPIC=True\nprotobuf:lite=False\nprotobuf:shared=False\nprotobuf:with_rtti=True\nprotobuf:with_zlib=True\nquirc:fPIC=True\nquirc:max_regions=254\nquirc:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
+    "package_id": "e40a8152015db40ac54b2f47955f57460439f1db",
+    "prev": "0",
+    "requires": [
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "1",
+     "13",
+     "14",
+     "15",
+     "16"
+    ],
+    "context": "host"
+   },
+   "3": {
+    "ref": "zlib/1.2.11",
+    "options": "fPIC=True\nminizip=deprecated\nshared=False",
+    "package_id": "e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc",
+    "prev": "0",
+    "context": "host"
+   },
+   "4": {
+    "ref": "libjpeg/9d",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc",
+    "prev": "0",
+    "context": "host"
+   },
+   "5": {
+    "ref": "jasper/2.0.32",
+    "options": "fPIC=True\nshared=False\nwith_libjpeg=libjpeg\nlibjpeg:fPIC=True\nlibjpeg:shared=False",
+    "package_id": "ca60d77822ab7b8702b6e2f8b7fd5ba525fa935d",
+    "prev": "0",
+    "requires": [
+     "4"
+    ],
+    "context": "host"
+   },
+   "6": {
+    "ref": "libpng/1.6.37",
+    "options": "api_prefix=\nfPIC=True\nshared=False\nsse=True\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "package_id": "aa5d2c35e57d031363e527ecb0b07150ed151373",
+    "prev": "0",
+    "requires": [
+     "3"
+    ],
+    "context": "host"
+   },
+   "7": {
+    "ref": "openexr/2.5.7",
+    "options": "fPIC=True\nshared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "package_id": "d48d63454535b8eb845e0e3cfda364a192ff153f",
+    "prev": "0",
+    "requires": [
+     "3"
+    ],
+    "context": "host"
+   },
+   "8": {
+    "ref": "libtiff/4.3.0",
+    "options": "cxx=True\nfPIC=True\njbig=True\njpeg=libjpeg\nlibdeflate=True\nlzma=True\nshared=False\nwebp=True\nzlib=True\nzstd=True\njbig:build_executables=True\njbig:fPIC=True\njbig:shared=False\nlibdeflate:fPIC=True\nlibdeflate:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibwebp:fPIC=True\nlibwebp:near_lossless=True\nlibwebp:shared=False\nlibwebp:swap_16bit_csp=False\nlibwebp:with_simd=True\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
+    "package_id": "c224669e2dbb0423acde0d9fde34e4a30bc1950a",
+    "prev": "0",
+    "requires": [
+     "3",
+     "9",
+     "10",
+     "4",
+     "11",
+     "12",
+     "13"
+    ],
+    "context": "host"
+   },
+   "9": {
+    "ref": "libdeflate/1.8",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc",
+    "prev": "0",
+    "context": "host"
+   },
+   "10": {
+    "ref": "xz_utils/5.2.5",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc",
+    "prev": "0",
+    "context": "host"
+   },
+   "11": {
+    "ref": "jbig/20160605",
+    "options": "build_executables=True\nfPIC=True\nshared=False",
+    "package_id": "004c156104209a65ece6cc9d71d8115366dd9d08",
+    "prev": "0",
+    "context": "host"
+   },
+   "12": {
+    "ref": "zstd/1.5.0",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc",
+    "prev": "0",
+    "context": "host"
+   },
+   "13": {
+    "ref": "libwebp/1.2.0",
+    "options": "fPIC=True\nnear_lossless=True\nshared=False\nswap_16bit_csp=False\nwith_simd=True",
+    "package_id": "e5887d58ca6f87178ea5a08021ef37a0e5371fd1",
+    "prev": "0",
+    "context": "host"
+   },
+   "14": {
+    "ref": "quirc/1.1",
+    "options": "fPIC=True\nmax_regions=254\nshared=False",
+    "package_id": "12049c68720dc394cb072460cad4e1b7157d043c",
+    "prev": "0",
+    "context": "host"
+   },
+   "15": {
+    "ref": "protobuf/3.17.1",
+    "options": "fPIC=True\nlite=False\nshared=False\nwith_rtti=True\nwith_zlib=True\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "package_id": "80f87b689c44329240fa96fdf4da01af5da79798",
+    "prev": "0",
+    "requires": [
+     "3"
+    ],
+    "context": "host"
+   },
+   "16": {
+    "ref": "ade/0.1.1f",
+    "options": "fPIC=True",
+    "package_id": "1aff124b71f6d938138ecd7179ff075f4304a85d",
+    "prev": "0",
+    "context": "host"
+   },
+   "17": {
+    "ref": "gtest/cci.20210126",
+    "options": "build_gmock=True\nfPIC=True\nhide_symbols=False\nno_main=False\nshared=False",
+    "package_id": "1f92fc047be6947dccdb4e320225e324379c858d",
+    "prev": "0",
+    "context": "host"
+   }
+  },
+  "revisions_enabled": false
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=apple-clang\ncompiler.libcxx=libc++\ncompiler.version=13.0\nos=Macos\nos_build=Macos\n[options]\n[build_requires]\n[env]\n"
+}

@@ -1,0 +1,7 @@
+[requires]
+eigen/3.4.0
+opencv/4.5.3
+gtest/cci.20210126
+
+[generators]
+cmake
