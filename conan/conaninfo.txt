@@ -7,6 +7,7 @@
     os=Macos
 
 [requires]
+    boost/1.Y.Z
     eigen/3.Y.Z
     gtest/cci.20210126
     opencv/4.Y.Z
@@ -26,11 +27,15 @@
 
 [full_requires]
     ade/0.1.1f:1aff124b71f6d938138ecd7179ff075f4304a85d
+    boost/1.77.0:c5da5260a03de8416b30cdf8d910ad9bd46ff2b3
+    bzip2/1.0.8:f2848f95be36a5d770fc8e833993b621f703b507
     eigen/3.4.0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
     gtest/cci.20210126:1f92fc047be6947dccdb4e320225e324379c858d
     jasper/2.0.32:ca60d77822ab7b8702b6e2f8b7fd5ba525fa935d
     jbig/20160605:004c156104209a65ece6cc9d71d8115366dd9d08
+    libbacktrace/cci.20210118:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
     libdeflate/1.8:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
+    libiconv/1.16:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
     libjpeg/9d:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
     libpng/1.6.37:aa5d2c35e57d031363e527ecb0b07150ed151373
     libtiff/4.3.0:c224669e2dbb0423acde0d9fde34e4a30bc1950a
@@ -45,6 +50,70 @@
 
 [full_options]
     ade:fPIC=True
+    boost:addr2line_location=/usr/bin/addr2line
+    boost:asio_no_deprecated=False
+    boost:buildid=None
+    boost:bzip2=True
+    boost:debug_level=0
+    boost:diagnostic_definitions=False
+    boost:error_code_header_only=False
+    boost:extra_b2_flags=None
+    boost:fPIC=True
+    boost:filesystem_no_deprecated=False
+    boost:header_only=False
+    boost:i18n_backend=deprecated
+    boost:i18n_backend_iconv=libiconv
+    boost:i18n_backend_icu=False
+    boost:layout=system
+    boost:lzma=False
+    boost:magic_autolink=False
+    boost:multithreading=True
+    boost:namespace=boost
+    boost:namespace_alias=False
+    boost:pch=True
+    boost:python_executable=None
+    boost:python_version=None
+    boost:segmented_stacks=False
+    boost:shared=False
+    boost:system_no_deprecated=False
+    boost:visibility=hidden
+    boost:with_stacktrace_backtrace=True
+    boost:without_atomic=False
+    boost:without_chrono=False
+    boost:without_container=False
+    boost:without_context=False
+    boost:without_contract=False
+    boost:without_coroutine=False
+    boost:without_date_time=False
+    boost:without_exception=False
+    boost:without_fiber=True
+    boost:without_filesystem=False
+    boost:without_graph=True
+    boost:without_graph_parallel=True
+    boost:without_iostreams=False
+    boost:without_json=True
+    boost:without_locale=False
+    boost:without_log=False
+    boost:without_math=True
+    boost:without_mpi=True
+    boost:without_nowide=True
+    boost:without_program_options=False
+    boost:without_python=True
+    boost:without_random=False
+    boost:without_regex=False
+    boost:without_serialization=False
+    boost:without_stacktrace=False
+    boost:without_system=False
+    boost:without_test=False
+    boost:without_thread=False
+    boost:without_timer=False
+    boost:without_type_erasure=False
+    boost:without_wave=False
+    boost:zlib=True
+    boost:zstd=False
+    bzip2:build_executable=True
+    bzip2:fPIC=True
+    bzip2:shared=False
     eigen:MPL2_only=False
     gtest:build_gmock=True
     gtest:fPIC=True
@@ -58,8 +127,12 @@
     jbig:build_executables=True
     jbig:fPIC=True
     jbig:shared=False
+    libbacktrace:fPIC=True
+    libbacktrace:shared=False
     libdeflate:fPIC=True
     libdeflate:shared=False
+    libiconv:fPIC=True
+    libiconv:shared=False
     libjpeg:fPIC=True
     libjpeg:shared=False
     libpng:api_prefix=
