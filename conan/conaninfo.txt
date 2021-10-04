@@ -10,6 +10,7 @@
     boost/1.Y.Z
     eigen/3.Y.Z
     gtest/cci.20210126
+    numcpp/2.Y.Z
     opencv/4.Y.Z
 
 [options]
@@ -40,6 +41,7 @@
     libpng/1.6.37:aa5d2c35e57d031363e527ecb0b07150ed151373
     libtiff/4.3.0:c224669e2dbb0423acde0d9fde34e4a30bc1950a
     libwebp/1.2.0:e5887d58ca6f87178ea5a08021ef37a0e5371fd1
+    numcpp/2.6.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
     opencv/4.5.3:e40a8152015db40ac54b2f47955f57460439f1db
     openexr/2.5.7:d48d63454535b8eb845e0e3cfda364a192ff153f
     protobuf/3.17.1:80f87b689c44329240fa96fdf4da01af5da79798
@@ -154,6 +156,8 @@
     libwebp:shared=False
     libwebp:swap_16bit_csp=False
     libwebp:with_simd=True
+    numcpp:threads=False
+    numcpp:with_boost=True
     opencv:contrib=False
     opencv:detect_cpu_baseline=False
     opencv:dnn=True

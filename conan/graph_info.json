@@ -421,6 +421,14 @@
    "True"
   ],
   [
+   "numcpp:threads",
+   "False"
+  ],
+  [
+   "numcpp:with_boost",
+   "True"
+  ],
+  [
    "opencv:contrib",
    "False"
   ],
