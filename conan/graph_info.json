@@ -85,6 +85,10 @@
    "False"
   ],
   [
+   "boost:numa",
+   "True"
+  ],
+  [
    "boost:pch",
    "True"
   ],
@@ -150,7 +154,7 @@
   ],
   [
    "boost:without_fiber",
-   "True"
+   "False"
   ],
   [
    "boost:without_filesystem",
@@ -158,7 +162,7 @@
   ],
   [
    "boost:without_graph",
-   "True"
+   "False"
   ],
   [
    "boost:without_graph_parallel",
@@ -170,7 +174,7 @@
   ],
   [
    "boost:without_json",
-   "True"
+   "False"
   ],
   [
    "boost:without_locale",
@@ -182,7 +186,7 @@
   ],
   [
    "boost:without_math",
-   "True"
+   "False"
   ],
   [
    "boost:without_mpi",
@@ -190,7 +194,7 @@
   ],
   [
    "boost:without_nowide",
-   "True"
+   "False"
   ],
   [
    "boost:without_program_options",
@@ -443,6 +447,10 @@
   [
    "opencv:fPIC",
    "True"
+  ],
+  [
+   "opencv:nonfree",
+   "False"
   ],
   [
    "opencv:parallel",

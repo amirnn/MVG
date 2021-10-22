@@ -1,9 +1,10 @@
 [settings]
     arch=x86_64
     build_type=Release
-    compiler=apple-clang
+    compiler=clang
+    compiler.cppstd=17
     compiler.libcxx=libc++
-    compiler.version=13.0
+    compiler.version=13
     os=Macos
 
 [requires]
@@ -20,35 +21,36 @@
     arch=x86_64
     arch_build=x86_64
     build_type=Release
-    compiler=apple-clang
+    compiler=clang
+    compiler.cppstd=17
     compiler.libcxx=libc++
-    compiler.version=13.0
+    compiler.version=13
     os=Macos
     os_build=Macos
 
 [full_requires]
-    ade/0.1.1f:1aff124b71f6d938138ecd7179ff075f4304a85d
-    boost/1.77.0:c5da5260a03de8416b30cdf8d910ad9bd46ff2b3
-    bzip2/1.0.8:f2848f95be36a5d770fc8e833993b621f703b507
+    ade/0.1.1f:3a9095ac5f5f56b8615498e5e52c60cf68707ea2
+    boost/1.77.0:344681cf2956030278384cead4a3e9ba34dcbbe5
+    bzip2/1.0.8:32d80c30da7f50bb5d2ce3566259fe3ac848bd36
     eigen/3.4.0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
-    gtest/cci.20210126:1f92fc047be6947dccdb4e320225e324379c858d
-    jasper/2.0.32:ca60d77822ab7b8702b6e2f8b7fd5ba525fa935d
-    jbig/20160605:004c156104209a65ece6cc9d71d8115366dd9d08
-    libbacktrace/cci.20210118:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
-    libdeflate/1.8:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
-    libiconv/1.16:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
-    libjpeg/9d:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
-    libpng/1.6.37:aa5d2c35e57d031363e527ecb0b07150ed151373
-    libtiff/4.3.0:c224669e2dbb0423acde0d9fde34e4a30bc1950a
-    libwebp/1.2.0:e5887d58ca6f87178ea5a08021ef37a0e5371fd1
+    gtest/cci.20210126:46bbc7d40bd1be8662116e9cb5970d0131978465
+    jasper/2.0.32:bb954fef514ceffa1ccfa25ba41bc3eb01df5107
+    jbig/20160605:00a978e4aada61929e3b349d557b27d166d20db4
+    libbacktrace/cci.20210118:5a40bf639b389c63ba1d847e246a06541fa354b3
+    libdeflate/1.8:5a40bf639b389c63ba1d847e246a06541fa354b3
+    libiconv/1.16:5a40bf639b389c63ba1d847e246a06541fa354b3
+    libjpeg/9d:5a40bf639b389c63ba1d847e246a06541fa354b3
+    libpng/1.6.37:666dcb272df2bafe7ec1eb5e1a70a65a1809685f
+    libtiff/4.3.0:9d5f518597c41b39e501b476fe1b12ab9bbdf651
+    libwebp/1.2.0:d052dc5a8c35287530fff763ce35c0d71a55fa69
     numcpp/2.6.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
-    opencv/4.5.3:e40a8152015db40ac54b2f47955f57460439f1db
-    openexr/2.5.7:d48d63454535b8eb845e0e3cfda364a192ff153f
-    protobuf/3.17.1:80f87b689c44329240fa96fdf4da01af5da79798
-    quirc/1.1:12049c68720dc394cb072460cad4e1b7157d043c
-    xz_utils/5.2.5:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
-    zlib/1.2.11:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
-    zstd/1.5.0:e4fbacdee83eb1a2e68227ffe19f6e9a61b36cbc
+    opencv/4.5.3:166e9c5d5bfd2a0ed98779e08af15f765d9cd925
+    openexr/2.5.7:efbf074fc57f5e436cf3bf02ee8ed629f67c7561
+    protobuf/3.17.1:779e2658b4750b78cf1fbfc2b89aca11a8c963ab
+    quirc/1.1:0910775a0523ef4b90ea85ccebe866075775b225
+    xz_utils/5.2.5:5a40bf639b389c63ba1d847e246a06541fa354b3
+    zlib/1.2.11:5a40bf639b389c63ba1d847e246a06541fa354b3
+    zstd/1.5.0:5a40bf639b389c63ba1d847e246a06541fa354b3
 
 [full_options]
     ade:fPIC=True
@@ -72,6 +74,7 @@
     boost:multithreading=True
     boost:namespace=boost
     boost:namespace_alias=False
+    boost:numa=True
     boost:pch=True
     boost:python_executable=None
     boost:python_version=None
@@ -88,17 +91,17 @@
     boost:without_coroutine=False
     boost:without_date_time=False
     boost:without_exception=False
-    boost:without_fiber=True
+    boost:without_fiber=False
     boost:without_filesystem=False
-    boost:without_graph=True
+    boost:without_graph=False
     boost:without_graph_parallel=True
     boost:without_iostreams=False
-    boost:without_json=True
+    boost:without_json=False
     boost:without_locale=False
     boost:without_log=False
-    boost:without_math=True
+    boost:without_math=False
     boost:without_mpi=True
-    boost:without_nowide=True
+    boost:without_nowide=False
     boost:without_program_options=False
     boost:without_python=True
     boost:without_random=False
@@ -162,6 +165,7 @@
     opencv:detect_cpu_baseline=False
     opencv:dnn=True
     opencv:fPIC=True
+    opencv:nonfree=False
     opencv:parallel=False
     opencv:shared=False
     opencv:with_ade=True

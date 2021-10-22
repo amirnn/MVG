@@ -15,11 +15,12 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 include_directories(${PROJECT_SOURCE_DIR}/include)
-add_subdirectory(src)
+
 
 # Tests
 # include(CTest)
 enable_testing()
+add_subdirectory(src)
 add_subdirectory(tests)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
