@@ -4,18 +4,13 @@ project(MVG VERSION 0.1.0)
 #  CPP Settings
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "-Wall -Wextra")
-set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
+# set(CMAKE_CXX_FLAGS "-Wall -Wextra")
+# set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
 
 # try to prevent in-source builds
 if("${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}")
     message(FATAL_ERROR "In-source builds are not allowed. Please create a separate 'build' directory and build in there.")
 endif()
-
-
-include(${CMAKE_SOURCE_DIR}/conan/dep/conanbuildinfo.cmake)
-conan_basic_setup()
-
 
 #------- tweaks for an improved build experience -------
 
@@ -38,7 +33,7 @@ elseif(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
 endif()
 
 # Conan Settings
-include(${CMAKE_SOURCE_DIR}/conan/conanbuildinfo.cmake)
+include(${CMAKE_SOURCE_DIR}/conan/deploy/conanbuildinfo.cmake)
 conan_basic_setup()
 
 # set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
