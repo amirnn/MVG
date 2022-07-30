@@ -12,7 +12,7 @@ To install the dependencies run the command below for your desired platform: (TO
 # Run following commands in a shell environment
 cd conan/deploy
 # Choose profile based on the platform and compiler
-conan install .. --profile=../profiles/profile-macos --build=missing
+conan install .. --profile=../profile/macos/macos --build=missing
 # or in windows 
-conan install .. --profile=..//profiles//windows-vs --build=missing
+conan install .. --profile=../profile/windows/windows-vs --build=missing
 ```
